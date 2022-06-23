@@ -10,8 +10,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        length = len(nums)
-        k = k % length
+        length = len(nums) #fix the length
+        k = k % length # avoid too large k value
         nums_1 = len(nums) * [0]
 
         nums_1[:k+1] = nums[-1*k:]
